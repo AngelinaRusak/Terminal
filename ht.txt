@@ -1,0 +1,97 @@
+1) Посмотреть где я
+
+pwd
+
+2) Создать папку
+
+mkdir qa_course
+
+3) Зайти в папку
+
+cd qa_course
+
+4) Создать 3 папки
+
+mkdir education qa training
+
+5) Зайти в любую папку
+
+cd education
+
+6) Создать 5 файлов (3 txt, 2 json)
+
+touch 1st.txt 2nd.txt 3d.txt 4th.json 5th.json
+
+7) Создать 3 папки
+
+mkdir 1folder 2folder 3folder
+
+8. Вывести список содержимого папки
+
+ls -la
+
+9) + Открыть любой txt файл
+
+vim 1st.txt
+
+10) + написать туда что-нибудь, любой текст.
+
+Hello!
+My name is Angelina.
+What is your name?
+How are you?
+
+11) + сохранить и выйти.
+
+Esc Shift ZZ
+
+12) Выйти из папки на уровень выше
+
+cd ..
+
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+
+mv 2nd.txt 4th.json 3foler
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+
+cp 3d.txt 5th.json 2folder
+
+15) Найти файл по имени
+
+find . -name "*1st.txt*"
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+Использовала и команду tail:
+
+tail -F 1st.txt
+ctrl c
+
+grep:
+
+grep "name" 1st.txt
+
+
+17) вывести несколько первых строк из текстового файла
+
+cat 1st.txt | sed -n 1,2p
+
+18) вывести несколько последних строк из текстового файла
+
+tail 1st.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+
+less -N 1st.txt
+
+20) вывести дату и время
+
+date
+
+
+Задание со *.
+
+#2.
+
+cd 1folder; mkdir 6th 7th 8th;cd 7th; touch 1st.txt 2nd.txt 3d.txt 4th.json 5th.json; mkdir 1f 2f 3f; mv 1st.txt 2nd.txt 3f
